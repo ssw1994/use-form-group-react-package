@@ -1,0 +1,22 @@
+{
+  "name": "use-form-group",
+  "version": "1.0.6",
+  "description": "reactive form group with validation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "formgroup",
+    "form",
+    "validation"
+  ],
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "babel-core": "^6.0.0",
+    "babel-loader": "8.2.3"
+  },
+  "author": "esachin",
+  "license": "ISC"
+}
