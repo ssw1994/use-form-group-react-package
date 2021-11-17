@@ -19,6 +19,8 @@ export default function useFormGroup(initialState) {
           ...validation,
         },
       };
+    } else if (!validation && !obj.validation) {
+      obj = { ...obj, errorMessage: "", error: false, validation: null };
     }
     if (updatedByUser) {
       obj["touched"] = true;
@@ -89,6 +91,9 @@ export default function useFormGroup(initialState) {
         ...fields,
         ...obj,
       });
+    },
+    function () {
+      setValues(getUpdatedInitialState(initialState));
     },
   ];
 }
